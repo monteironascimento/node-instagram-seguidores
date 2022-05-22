@@ -1,0 +1,39 @@
+{
+  
+  "name": "node-instagram",
+  "version": "0.0.1",
+  "description": "Automação Instagram",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.17.11",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "axios": "^0.21.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "instagram-web-api": "^2.2.2",
+    "path": "^0.12.7",
+    "query-string": "^7.0.0",
+    "tough-cookie-filestore2": "^1.0.0",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=developement  ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "test": "NODE_ENV=test ts-node src/server.ts",
+    "start": "NODE_ENV=production ts-node src/server.ts",
+    "build": "ts-node --build",
+    "clean": "ts-node --build --clean"
+  },
+  "devDependencies": {
+    "@types/request": "^2.48.5",
+    "@types/uuid": "^8.3.0",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import-helpers": "^1.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "prettier": "^2.2.1",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.4"
+  }
+}
